@@ -24,3 +24,32 @@ Tables:
 - Columns
 - Headers
 - Data Types (Numeric Types, String Types, Date Types)
+
+
+MySQL: The Basics of CRUD
+**CREATE EXAMPLE:**
+    (INSERT INTO)
+
+
+**READ EXAMPLES:**
+    (SELECT * FROM cats;)
+    (SELECT name FROM cats;)
+    (SELECT * FROM cats WHERE age=4;)
+    (SELECT * FROM cats WHERE name='Egg';) 
+- The * in "SELECT * FROM cats" means "Give me all columns."
+
+
+**UPDATE EXAMPLES:**
+    (UPDATE cats SET breed='Shorthair' WHERE breed='Tabby';)
+    (UPDATE cats SET age=14 WHERE name='Misty';)
+- A good rule of thumb is to try SELECT before you actually UPDATE
+
+
+**DELETE EXAMPLES:**
+    (DELETE FROM cats WHERE name='Egg';)
+    (DELETE FROM cats;) <-- Deletes Everything
+- Always run select first to double check...
+
+**Aliases:** 
+- Makes it easier to read results
+(SELECT cat_id AS id, name FROM cats;)
