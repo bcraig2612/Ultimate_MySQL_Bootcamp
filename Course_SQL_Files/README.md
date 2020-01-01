@@ -53,3 +53,33 @@ MySQL: The Basics of CRUD
 **Aliases:** 
 - Makes it easier to read results
 (SELECT cat_id AS id, name FROM cats;)
+
+**SQL FILE USAGE:**
+- create SQL file
+- to import the file, run this code:  (source file_name.sql)  
+
+**WORKING WITH CONCAT:**
+- combine data for cleaner output
+- CONCAT(x, y, z) 
+- CONCAT(column, anotherColumn)
+- CONCAT(column, 'text', anotherColumn, 'more text')
+- CONCAT(column, ' ', anotherColumn)
+**WORKING WITH CONCAT_WS:**
+-concat with separator
+- SELECT 
+  CONCAT_WS(' - ', title, author_fname, author_lname) 
+  FROM books;
+
+**WORKING WITH SUBSTRING or SUBSTR:**
+- Work with parts of strings 
+- SELECT SUBSTRING ('Hello World', 1, 4);
+- This returns 'Hell'
+- SELECT SUBSTRING ('Hello World', 7);
+- This returns 'World'
+- SELECT SUBSTRING ('Hello World', -3);
+- This returns 'rld' 
+- *NOW WITH COLUMNS:*
+- SELECT SUBSTRING(title, 1, 10) FROM books;
+- SELECT SUBSTRING(title, 1, 10) AS 'short_title' FROM books;
+**USING CONCAT & SUBSTRING TOGETHER:**
+- SELECT CONCAT(SUBSTRING(title, 1, 10), '...') AS 'short_title' FROM books;
