@@ -83,3 +83,27 @@ MySQL: The Basics of CRUD
 - SELECT SUBSTRING(title, 1, 10) AS 'short_title' FROM books;
 **USING CONCAT & SUBSTRING TOGETHER:**
 - SELECT CONCAT(SUBSTRING(title, 1, 10), '...') AS 'short_title' FROM books;
+
+**USING REPLACE:**
+- Replace parts of strings
+- Case sensitive
+- SELECT REPLACE('Hello World', 'Hell', '%$#@');
+- SELECT REPLACE('cheese bread coffee milk', ' ', ' and ');
+- SELECT SUBSTRING(REPLACE(title, 'e', '3'), 1, 10) AS 'weird_string' FROM books;
+
+**USING REVERSE:**
+- Will reverse a string
+- SELECT REVERSE('Hello World');
+- SELECT CONCAT(author_fname, REVERSE(author_fname)) FROM books;
+
+**USING CHAR_LENGTH:**
+- Counts the characters in a string
+- SELECT author_lname, CHAR_LENGTH(author_lname) AS 'length' FROM books;
+- SELECT CONCAT(author_lname, ' is ', CHAR_LENGTH(author_lname), ' characters long') FROM books;
+
+**Using UPPER() and LOWER():**
+- Change a string's case
+- SELECT UPPER('Hello World');
+- SELECT LOWER('Hello World');
+- SELECT UPPER(title) from books;
+- SELECT CONCAT('MY FAVORITE BOOK IS ', UPPER(title)) FROM books;
