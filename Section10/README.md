@@ -1,4 +1,4 @@
-**Section 11: Revisiting Data Types**
+**Section 10: Revisiting Data Types**
 - Storing Text
 - VARCHAR
 - CHAR
@@ -36,3 +36,7 @@
 
 - DATETIME - Values with a Date AND Time 
 - 'YYYY-MM-DD HH:MM:SS' Format
+
+*CURDATE()* --> Gives current date
+*CURTIME()* --> Gives current time
+*NOW()* --> Give current date/time
