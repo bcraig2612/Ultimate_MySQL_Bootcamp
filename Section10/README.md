@@ -40,3 +40,10 @@
 *CURDATE()* --> Gives current date
 *CURTIME()* --> Gives current time
 *NOW()* --> Give current date/time
+*DAYNAME()*
+*DAY()*
+*DAYOFMONTH()*
+*DAYOFWEEK()*
+*DAYOFYEAR()*
+*HOUR()*
+*DATE_FORMAT(date, format)*

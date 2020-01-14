@@ -1,6 +1,12 @@
 {
     "cSpell.ignoreWords": [
         "author",
+        "curdate",
+        "curtime",
+        "dayname",
+        "dayofmonth",
+        "dayofweek",
+        "dayofyear",
         "fname",
         "lname",
         "varchar"
