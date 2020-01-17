@@ -2,19 +2,24 @@
     "cSpell.ignoreWords": [
         "author",
         "bardo",
+        "bootcamp",
         "chabon",
         "coraline",
+        "createdb",
         "curdate",
         "curtime",
         "dayname",
         "dayofmonth",
         "dayofweek",
         "dayofyear",
+        "db",
         "fname",
         "followees",
         "kavalier",
         "lahiri",
         "lname",
+        "mysql",
+        "project",
         "varchar"
     ]
 }
