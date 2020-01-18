@@ -5,8 +5,10 @@ let app = express();
 
 // Using EJS (Embedded JavaScript)
 app.set("view engine", "ejs");
+
 // Using body-parse to allow us to extract data from our Post Requests:
 app.use(bodyParser.urlencoded({ extended: true }));
+
 // Informing Express to take whatever is in the public folder & serve them where we want access to them
 // In this case, we link our css in home.ejs within the head
 app.use(express.static(__dirname + "/public"));
