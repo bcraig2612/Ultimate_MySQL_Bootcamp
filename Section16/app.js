@@ -1,4 +1,3 @@
-const express = require("express");
 const mysql = require("mysql");
 const faker = require("faker");
 
@@ -6,30 +5,33 @@ const faker = require("faker");
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "password"
-  // database: "mysql_bootcamp_project_db"
+  password: "Kblair_2612",
+  database: "join_us"
 });
 
-// Connect to mySQL db
-db.connect(error => {
-  if (error) {
-    throw error;
-  }
-  console.log("mySQL Connected!");
-});
+// SELECTING USING NODE:
+// var q = "SELECT COUNT(*) AS total FROM users";
+// db.query(q, function(error, results, fields) {
+//   if (error) throw error;
+//   console.log(results[0].total);
+// });
 
-const app = express();
+// INSERTING USING NODE:
+// var q = { email: faker.internet.email(), created_at: faker.date.past() };
+// db.query("INSERT INTO users SET ?", q, function(error, result) {
+//   if (error) throw error;
+//   console.log(result);
+// });
 
-//Create database
-app.get("/createdb", (request, response) => {
-  let sql = "CREATE DATABASE mysql_bootcamp_project_db";
-  db.query(sql, (error, result) => {
-    if (error) throw error;
-    console.log(result);
-    response.send("Database has been created!");
-  });
-});
+//INSERTING 500 USERS USING NODE:
+// var data = [];
+// for (let i = 0; i < 500; i++) {
+//   data.push([faker.internet.email(), faker.date.past()]);
+// }
+// let q = "INSERT INTO users (email, created_at) VALUES ?";
+// db.query(q, [data], function(error, result) {
+//   console.log(error);
+//   console.log(result);
+// });
 
-app.listen("3000", () => {
-  console.log("Server started on port 3000");
-});
+db.end();

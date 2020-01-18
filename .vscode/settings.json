@@ -15,10 +15,14 @@
         "db",
         "fname",
         "followees",
+        "github",
         "kavalier",
+        "kaypink",
+        "kblair",
         "lahiri",
         "lname",
         "mysql",
+        "mysqljs",
         "project",
         "varchar"
     ]
