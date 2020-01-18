@@ -13,6 +13,8 @@
         "dayofweek",
         "dayofyear",
         "db",
+        "delimeter",
+        "devs",
         "fname",
         "followees",
         "github",
@@ -26,6 +28,7 @@
         "mysqljs",
         "project",
         "section",
+        "sqlstate",
         "varchar"
     ]
 }
